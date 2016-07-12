@@ -38,6 +38,21 @@ public class CategoryFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(CategoryFragment.this.getActivity(),cat2.class);
+                startActivity(intent);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(CategoryFragment.this.getActivity(),cat3.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 

@@ -3,6 +3,7 @@ package com.example.zaidi_sheeraz.navdrawer;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -38,31 +40,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(CategoryFragment.this.getActivity(),android.R.layout.simple_list_item_1,s);
         l.setAdapter(adapter);
         l.setOnItemClickListener(this);
-//        b1=(Button)view.findViewById(R.id.cat1);
-//        b2=(Button)view.findViewById(R.id.cat2);
-//        b3=(Button)view.findViewById(R.id.cat3);
-//        b1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//             Intent intent   =new Intent(CategoryFragment.this.getActivity(),cat_act.class);
-//                startActivity(intent);
-//            }
-//        });
-//        b2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(CategoryFragment.this.getActivity(),cat2.class);
-//                startActivity(intent);
-//            }
-//        });
-//        b3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(CategoryFragment.this.getActivity(),cat3.class);
-//                startActivity(intent);
-//            }
-//        });
-
+        Toast.makeText(CategoryFragment.this.getActivity(),"Click on Item to checkout color",Toast.LENGTH_SHORT).show();
         return view;
     }
 
@@ -74,6 +52,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
 
         if (position == 0) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.rgb(238,130,238));
             Intent myIntent = new Intent(view.getContext(), cat_act.class);
             startActivityForResult(myIntent, 0);
 
@@ -81,6 +60,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         }
         if (position == 1) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.rgb(75,0,130));
             Intent myIntent = new Intent(view.getContext(), cat2.class);
             startActivityForResult(myIntent, 0);
 
@@ -89,6 +69,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
 
         if (position == 2) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.BLUE);
             Intent myIntent = new Intent(view.getContext(), cat3.class);
             startActivityForResult(myIntent, 0);
 
@@ -96,6 +77,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         }
         if (position == 3) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.GREEN);
             Intent myIntent = new Intent(view.getContext(), cat4.class);
             startActivityForResult(myIntent, 0);
 
@@ -103,6 +85,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         }
         if (position == 4) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.YELLOW);
             Intent myIntent = new Intent(view.getContext(), cat5.class);
             startActivityForResult(myIntent, 0);
 
@@ -110,6 +93,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         }
         if (position == 5) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.rgb(255,165,0));
             Intent myIntent = new Intent(view.getContext(), cat6.class);
             startActivityForResult(myIntent, 0);
 
@@ -117,6 +101,7 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
         }
         if (position == 6) {
             //code specific to first list item
+            l.getChildAt(position).setBackgroundColor(Color.RED);
             Intent myIntent = new Intent(view.getContext(), cat7.class);
             startActivityForResult(myIntent, 0);
 

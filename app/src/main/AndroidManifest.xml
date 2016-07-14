@@ -23,7 +23,11 @@
         <activity
             android:name=".cat3"
             android:label="@string/title_activity_cat3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".cat4" />
+        <activity android:name=".cat5" />
+        <activity android:name=".cat6" />
+        <activity android:name=".cat7"></activity>
     </application>
 
 </manifest>

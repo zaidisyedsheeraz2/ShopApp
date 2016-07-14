@@ -94,5 +94,33 @@ public class CategoryFragment extends Fragment implements AdapterView.OnItemClic
 
 
         }
+        if (position == 3) {
+            //code specific to first list item
+            Intent myIntent = new Intent(view.getContext(), cat4.class);
+            startActivityForResult(myIntent, 0);
+
+
+        }
+        if (position == 4) {
+            //code specific to first list item
+            Intent myIntent = new Intent(view.getContext(), cat5.class);
+            startActivityForResult(myIntent, 0);
+
+
+        }
+        if (position == 5) {
+            //code specific to first list item
+            Intent myIntent = new Intent(view.getContext(), cat6.class);
+            startActivityForResult(myIntent, 0);
+
+
+        }
+        if (position == 6) {
+            //code specific to first list item
+            Intent myIntent = new Intent(view.getContext(), cat7.class);
+            startActivityForResult(myIntent, 0);
+
+
+        }
     }
 }

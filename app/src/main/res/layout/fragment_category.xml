@@ -4,42 +4,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.zaidi_sheeraz.navdrawer.CategoryFragment">
 
-
-
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:id="@+id/relativeLayout">-->
-
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="170dp"-->
-            <!--android:text="Category1"-->
-            <!--android:id="@+id/cat1"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:textSize="30sp"/>-->
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="170dp"-->
-            <!--android:text="Category2"-->
-            <!--android:id="@+id/cat2"-->
-            <!--android:layout_below="@+id/cat1"-->
-            <!--android:textSize="30sp"/>-->
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="170dp"-->
-            <!--android:text="Category3"-->
-            <!--android:textSize="30dp"-->
-            <!--android:id="@+id/cat3"-->
-            <!--android:layout_below="@+id/cat2"/>-->
-
-    <!--</RelativeLayout>-->
-
-
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
